@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSbookshop - Item Information</title>
+    <script src="../js/jquery-1.8.3.js" type="text/javascript"></script>
+
+    <script src="../js/jquery.colorbox.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/colorbox.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/sun_star.css"/>
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/item_style.css">
+    <script>
+        $(document).ready(function (e) {
+            $(".box").colorbox({
+                rel: "box",
+                transiton: "fade",
+                overlayClose: true,
+                scalePhotos: true,
+                scrolling: true,
+                maxWidth: 800,
+                maxHeight: 600,
+                slideshow: true,
+                slideshowSpeed: 5000,
+                opacity: 0.5,
+                preloading: true
+
+            });
+        });
+        $(function() {
+            $("#div").click(function() {
+                $(this).toggleClass("blue");
+            });
+        });
+    </script>
+
+    <script src="js/gallery.js"></script>
+    <style type="text/css">
+        body {
+              font-family: 'Open Sans', sans-serif;
+              color: #4A4A4A ;
+              background: url("../images/page_details/details_back.jpg");
+          }
+    </style>
+
+
+
+</head>
+
+<body>
+<div id="setnav">
+    <div class="navl">
+        <span>Welcome to BSbookshop, Please </span><a href="details/Account1.html">Log In</a> .
+    </div>
+    <div class="navr">
+        <nav class="navright">
+            <a href="../BS_index.html">BS Index <i class="fa fa-bold"></i></a> |
+            <a href="details/buycar.html">My Cart <i class="fa fa-shopping-cart"></i> </a> |
+            <a href="details/collection.html">My Collect <i class="fa fa-heart"></i> </a> |
+            <a href="details/orderlist.html">My Order <i class="fa fa-tags"></i> </a>
+        </nav>
+    </div>
+</div>
+<div id="header">
+    <div id="header-left">
+        <a href="../BS_index.html"><img class="logo" src="../images/page_details/logo.png"/></a>
+    </div>
+    <div id="header-right">
+        <form class="form-wrapper cf">
+            <input type="text" placeholder="Search for more books..." required>
+            <button type="submit">Search <i class="fa fa-search"></i> </button>
+        </form>
+    </div>
+    <div id="clear"></div>
+</div>
+<hr style="height:5px;border:none;border-top:5px ridge green;" />
+<div id="item">
+    <div id="itemimg">
+        <a href="../images/page_details/41-American Sanctuary/p1-01.jpg" class="box" ><img src="../images/page_details/41-American Sanctuary/p1-01.jpg" alt="img02"/></a>
+    </div>
+    <div class="itemimg_ribbon">
+    </div>
+    <div id="iteminfo" class="inline">
+        <h1 id="title">American Sanctuary</h1>
+        <div class="stars">
+            <span class="b_star_1"><i class="b_d6"></i></span>
+        </div>
+        <!-- Class of i changes the stars. b_d8 means 4stars -->
+        <p id="subtitle">A. Roger Ekirch’s American Sanctuary begins in 1797 with the bloodiest mutiny ever suffered by the Royal Navy—on the British frigate HMS Hermione, four thousand miles from England’s shores, off the western coast of Puerto Rico. </p>
+        <!-- <h2 id="price">price:30.00￥</h2>--->
+        <div class="plans">
+            <div class="plan" id="plan">
+                <h3 class="plan-title">Normal</h3>
+                <p class="plan-price">$16.54 <span class="plan-unit">Normal Packing</span></p>
+                <input type="radio" checked="checked" name="paylist" value="1" class="option-input radio">
+            </div>
+            <div class="plan" id="plan2">
+                <h3 class="plan-title">Clothbound</h3>
+                <p class="plan-price">$17.54 <span class="plan-unit">Clothbound Packing</span></p>
+                <input type="radio" name="paylist" value="2" class="option-input radio">
+            </div>
+        </div>
+        <P id="oinfo">A. Roger Ekirch’s American Sanctuary</P>
+        <form id="buyf">
+            <!--<label for="count"></label> <input type="text" id="count" class="input-text">-->
+            <button id="buy" class="buy" type="button">Buy Now <i class="fa fa-check"></i> </button>
+            <button id="cart" class="buy" type="button" onclick="javascript:alert('Success Added to Your Cart')">Add to Cart <i class="fa fa-cart-arrow-down"></i> </button>
+            <button id="collect" class="buy" type="button" onclick="javascript:alert('Success Added to Your Collect')"><i class="fa fa-heart"></i> </button>
+        </form>
+    </div>
+<!--    <div id="itemlike" class="inline">
+    <p>The book you may also like..</p>
+    </div>-->
+</div>
+<div style="clear: both;"></div>
+<hr/>
+    <div id="itemdetails">
+        <p>A. Roger Ekirch’s American Sanctuary begins in 1797 with the bloodiest mutiny ever suffered by the Royal Navy—on the British frigate HMS Hermione, four thousand miles from England’s shores, off the western coast of Puerto Rico. In the midst of the most storied epoch in British seafaring history, the mutiny struck at the very heart of military authority and at Britain’s hierarchical social order. Revolution was in the air: America had won its War of Independence, the French Revolution was still unfolding, and a ferocious rebellion loomed in Ireland, with countless dissidents already arrested.</p>
+
+        <p>Most of the Hermione mutineers had scattered throughout the North Atlantic; one of them, Jonathan Robbins, had made his way to American shores, and the British were asking for his extradition. Robbins let it be known that he was an American citizen from Danbury, Connecticut, and that he had been impressed into service by the British.</p>
+
+        <p>John Adams, the Federalist successor to Washington as president, in one of the most catastrophic blunders of his administration, sanctioned Robbins’s extradition, according to the terms of the Jay Treaty of 1794. Convicted of murder and piracy by a court-martial in Jamaica, Robbins was sentenced by the British to death, hauled up on the fore yardarm of the frigate Acasta, blindfolded with his hands tied behind his back, and hanged.</p>
+
+        <p>Adams’s miscalculation ignited a political firestorm, only to be fanned by news of Robbins’s execution without his constitutional rights of due process and trial by jury. Thomas Jefferson, then vice president and leader of the emergent Republican Party, said, “No one circumstance since the establishment of our government has affected the popular mind more.” Congressional Republicans tried to censure Adams, and the Federalist majority, in a bitter blow to the president, were unable to muster a vote of confidence condoning Robbins’s surrender.</p>
+
+        <p>American Sanctuary brilliantly lays out in full detail the story of how the Robbins affair and the presidential campaign of 1800 inflamed the new nation and set in motion a constitutional crisis, resulting in Adams’s defeat and Jefferson’s election as the third president of the United States.</p>
+
+        <p>Ekirch writes that the aftershocks of Robbins’s martyrdom helped to shape the infant republic’s identity in the way Americans envisioned themselves. We see how the Hermione crisis led directly to the country’s historic decision to grant political asylum to refugees from foreign governments—a major achievement in fulfilling the resonant promise of American independence, as voiced by Tom Paine, to provide “an asylum for mankind
+        </p>
+
+<div id="footer">
+
+</div>
+</body>
+</html>

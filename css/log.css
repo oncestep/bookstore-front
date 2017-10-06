@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(../images/log-sign/3.jpg);
+	background-size:100%;
+	}
+.submit {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color:#00b0ff;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  margin-bottom: 10px;
+  -webkit-border-top-left-radius:40px;
+  -webkit-border-bottom-right-radius:40px;
+}
+.register{
+  padding: 19px 39px 18px 39px;
+  color: white;
+	background-color:#9e9d24;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+
+
+  margin-bottom: 10px;
+  -webkit-border-bottom-left-radius:40px;
+  -webkit-border-top-right-radius:40px;
+	}
+.register:hover{
+	background-color:#5F0;
+}
+#form{
+	background:#999;
+	opacity:0.8;
+	border:solid 1px;
+	border-radius:5px;
+	padding:60px;
+	border-bottom-color:#999;
+	width:500px;
+	size:500px;
+	linear-height:1.5;
+	box-shadow:rgba(0,0,0,0.5) 0px 10px 10px 0;
+	width:450px;
+	margin:auto;
+	}
+#form label{
+	display:block;
+	font-size:1.1em;
+	}
+.textfield{
+	width:350px;
+	height:50px;
+	padding-left:60px;
+	padding-right:60px;
+	height:120%;
+	font-size:22px;
+	}
+#l1{
+	text-align:center;
+	width:150px;
+	height:150px;
+	vertical-align:middle;
+	text-align:center;
+
+	display:block;
+	margin-left:550px;
+	}
+#logo{
+	width:150px;
+	height:150px;
+
+
+
+	}
+.same{
+	display:inline-block;
+	}
+

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(../images/log-sign/1.jpg);
+	background-size:100%;
+	opacity:0.6;
+	}
+#pic{
+	vertical-align:middle;
+	text-align:center;
+	}
+#logo{
+	width:10%;
+	height:50px;
+	}
+form{
+	/*background:rgba(0,0,0,0.7);*/
+	/*background:linear-gradient(to bottom left,#999,#666);*/
+	background-color:#999;
+	width:450px;
+	margin:10px auto;/*center*/
+	 -webkit-box-shadow:10px 10px 10px #333;
+	border-radius:7px;
+	padding:15px;
+	opacity:1;
+   
+}
+.submit:hover{
+	background: #ff8033;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,textarea
+{
+	width:95%;
+    background:rgba(225,225,225,0.8);
+	padding:10px 10px;
+
+	font-size:18px;
+	outline-color:#C9F;
+	border-radius:30px;
+	margin:10px;
+	
+}
+.submit {
+    text-align: center;
+	background: #9bff6e;
+	width:80%;
+	color:#000;
+	font-size:24px;
+    margin-left: 45px;
+	margin-top:15px;
+	padding:20px 40px 20px 40px;
+    border-radius: 10px;
+}
+.check{
+	margin:10px auto;
+	display:inline;
+	margin:5px;
+}
+#l1{
+	width:30%;
+	height:30px;
+	display:inline;
+	float:left;
+	padding:5px 5px;
+	border-radius:15px;
+	}
+#r1{
+	width:30%;
+	height:30px;
+	display:inline-block;
+	float:right;
+	padding:5px 5px;
+	margin-bottom:20px;
+    margin-right: 100px;
+	border-radius:15px;
+	background-color: #9bff6e;
+	}
+
+

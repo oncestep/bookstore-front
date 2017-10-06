@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/BS_index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Searchbox.css"/>
+    <link rel="icon" href="images/logo/BS_Store.ico" type="image/x-icon" />
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/BS_index.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <title>BS_index</title>
+
+
+</head>
+<body onload="hexagon();">
+<!--fixed headline-->
+<div class="headline">
+    <div class="headline-left">
+        <a class="link-a" href="">Home</a>
+        <a class="link-a" href="#books">Books</a>
+        <a class="link-a" href="#contact">Contact</a>
+    </div>
+    <div class="headline-right">
+        <a class="modalbtn" id="modal" href="BS_pages/details/log.html">Login</a>
+        <a class="link-b" href="BS_pages/details/Account1.html">Account</a>
+    </div>
+</div>
+
+<div>
+<!--left frame-->
+<div class="frame-left" id="home">
+    <div class="logo">
+        <img src="images/logo/new.png" class="logo-style"/></div>
+    <div class="recom">
+        <div>
+            <img class="recom-h" src="images/recom/header.gif">
+        </div>
+        <a title="Me Talk Pretty One Day"  href="BS_pages/BS_itemr1.html" target="_blank">
+            <img class="recom-b" src="images/recom/rec.jpg" alt="recommendation">
+        </a>
+        <p class="book-name book-recom">
+            <a title="Me Talk Pretty One Day" class="book-link" href="BS_pages/BS_itemr1.html" target="_blank">
+                Me Talk Pretty One Day
+            </a>
+        </p>
+        <span class="book-intro" style="margin-left: 10px;">BS_BookStore</span>
+
+        <p class="book-price" style="margin-left: 5px;">
+                        <span class="book-price-now">
+                            $10.50
+                        </span>
+            <span class="book-price-pre">
+                            $18.70
+                        </span>
+        </p>
+        <h3 style="margin-top: 30px;margin-left: 10px;">Introduction</h3>
+        <p class="rec-intro">A recent transplant to Paris, humorist David Sedaris, bestselling author of "Naked", presents a collection of his strongest work yet.</p>
+
+    </div>
+
+    <!-- classify  -->
+    <h3 class="cla-title">Shop by Category</h3>
+    <div class="classify cla-ex">
+
+        <ul>
+            <li class="cla-item" id="item1">
+                <a href="#books">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Art&Pho.jpg">
+                        <p class="cla-item-title" href="">Art&Photography</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item2">
+                <a href="#books">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Bio&Mem.png">
+                        <p class="cla-item-title" style="margin-left: 0px;" href="">Biographies&Memoirs</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item3">
+                <a href="#books">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Chi.jpg">
+                        <p class="cla-item-title" style="margin-left: 15px;" href="">Children's Books</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item4">
+                <a href="#books">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Cook&Food.jpg">
+                        <p class="cla-item-title" style="margin-left: 0px;" href="">Cookbooks,Food,Wine</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item5">
+                <a href="#books">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/His.jpg">
+                        <p class="cla-item-title" style="margin-left: 48px;" href="">History</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item6">
+                <a href="#books-2">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Lit&Fic.jpg">
+                        <p class="cla-item-title" style="margin-left: 10px;" href="">Literature&Fiction</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item7">
+                <a href="#books-2">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Rom.png">
+                        <p class="cla-item-title" style="margin-left: 40px;" href="">Romance</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item8">
+                <a href="#books-2">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Mys&Sus.jpg">
+                        <p class="cla-item-title" style="margin-left: 10px;" href="">Mystery&Suspense</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item9">
+                <a href="#books-2">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Sci&Fan.png">
+                        <p class="cla-item-title" style="margin-left: 25px;" href="">Sci-Fi&Fantasy</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="cla-item" id="item10">
+                <a href="#books-2">
+                    <div class="cla-mer">
+                        <img class="cla-adapt" src="images/classify/Tee&You.jpg">
+                        <p class="cla-item-title" style="margin-left: 10px;" href="">Teens&YoungAdult</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</div>
+
+<!--cneter frame-->
+<div class="frame-center">
+    <!-- search box-->
+    <div class="search">
+        <div class="searchbox">
+        <form action="/search.html" class="search-wrapper cf">
+            <input type="text" placeholder="Search here..." required>
+            <button type="submit">Search</button>
+        </form>
+        </div>
+        <div class="undersearch">
+            <img src="images/searchbox/under1.png" class="undersearch-item">
+            <img src="images/searchbox/under2.png" class="undersearch-item">
+            <img src="images/searchbox/under3.jpg" class="undersearch-item">
+        </div>
+    </div>
+
+    <!--rolling player-->
+    <div class="roller">
+        
+        <img class="pic-style" src="images/roller/p1.jpg">
+        <!--choose cell-->
+       <div class="cell">
+            <div id="point5" class="point point-edge point-dumb">
+                5
+            </div>
+            <div id="point4" class="point point-dumb">
+                4
+            </div>
+            <div id="point3" class="point point-dumb">
+                3
+            </div>
+            <div id="point2" class="point point-dumb">
+                2
+            </div>
+            <div id="point1" class="point point-active">
+                1
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--cross line-->
+    <div class="separator" id="books">
+    </div>
+
+    <!--first exhibitation -->
+    <div>
+    <div class="exhibit-fir" id="books1">
+        <div class="id-part">
+            <img src="images/classify/Art&Pho.jpg" class="id-rect">
+            <span class="id-context">
+                Art&Photography
+            </span>
+        </div>
+        <div class="exh-part">
+            <ul class="book-list">
+                <li class="book" style="margin-left:20px;">
+                    <a title="2015 International Building Code"  href="BS_pages/BS_item01.html" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="2015 International Building Code" class="book-link" href="" target="_blank">
+                            2015 International Building Code
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $34.40
+                        </span>
+                        <span class="book-price-pre">
+                            $50.62
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Colored Pencil Painting Portraits"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p11.jpg" alternative="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="Colored Pencil Painting Portraits" class="book-link" href="" target="_blank">
+                            Colored Pencil Painting Portraits
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $17.69
+                        </span>
+                        <span class="book-price-pre">
+                            $25.99
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Parisian Chic Look Book: What Should I Wear Today?"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\art&pho\p3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="Parisian Chic Look Book: What Should I Wear Today?" class="book-link"  href="" target="_blank">
+                            Parisian Chic Look Book: What Should I Wear Today?
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $20.36
+                            </span>
+                        <span class="book-price-pre">
+                            $29.25
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Parisian Chic"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\art&pho\p4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="Parisian Chic" class="book-link" href="" target="_blank">
+                            Parisian Chic
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.99
+                        </span>
+                        <span class="book-price-pre">
+                            $21.40
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Curated Closet: A Simple System for Discovering Your Personal Style and Building Your Dream Wardrobe"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Curated Closet: A Simple System for Discovering Your Personal Style and Building Your Dream Wardrobe" class="book-link" href="" target="_blank">
+                            The Curated Closet: A Simple System for Discovering Your Personal Style and Building Your Dream Wardrobe
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $16.99
+                        </span>
+                        <span class="book-price-pre">
+                            $32.95
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book" style="margin-left:20px;">
+                    <a title="Hamilton: The Revolution"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="Hamilton: The Revolution" class="book-link" href="" target="_blank">
+                            Hamilton: The Revolution
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $20.91
+                        </span>
+                        <span class="book-price-pre">
+                            $25.55
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing" class="book-link" href="" target="_blank">
+                            The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.30
+                        </span>
+                        <span class="book-price-pre">
+                            $9.89
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Adult All-In-One Course: Lesson-Theory-Technic: Level 1"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Adult All-In-One Course: Lesson-Theory-Technic: Level 1" class="book-link" href="" target="_blank">
+                            Adult All-In-One Course: Lesson-Theory-Technic: Level 1
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $8.73
+                        </span>
+                        <span class="book-price-pre">
+                            $16.99
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Botanical Line Drawing"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Botanical Line Drawing" class="book-link" href="" target="_blank">
+                            Botanical Line Drawing
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $13.07
+                        </span>
+                        <span class="book-price-pre">
+                            $17.96
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Wreck This Journal (Paper bag) Expanded Ed."  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/art&pho/p10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Wreck This Journal (Paper bag) Expanded Ed." class="book-link" href="" target="_blank">
+                            Wreck This Journal (Paper bag) Expanded Ed.
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.27
+                        </span>
+                        <span class="book-price-pre">
+                            $18.46
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="exhibit-fir" id="books2" style="display: none">
+        <div class="id-part">
+            <img src="images/classify/Bio&Mem.png" class="id-rect">
+            <span class="id-context">
+                Biographies&Memoirs
+            </span>
+        </div>
+        <div class="exh-part">
+            <ul class="book-list">
+                <li class="book" style="margin-left:20px;">
+                    <a title="Hillbilly Elegy"  href="BS_pages/BS_item11.html" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="Hillbilly Elegy" class="book-link" href="" target="_blank">
+                            Hillbilly Elegy
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                             $15.49
+                        </span>
+                        <span class="book-price-pre">
+                            $16.79
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Secrets for the Mad"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p2.jpg" alternative="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="Secrets for the Mad" class="book-link" href="" target="_blank">
+                            Secrets for the Mad
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $10.00
+                        </span>
+                        <span class="book-price-pre">
+                            $11.39
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The 5 Love Languages"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="The 5 Love Languages" class="book-link"  href="" target="_blank">
+                            The 5 Love Languages
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $9.59
+                            </span>
+                        <span class="book-price-pre">
+                            $14.15
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Hunger"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\Bio&Mem/p4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="Hunger" class="book-link" href="" target="_blank">
+                            Hunger
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.46
+                        </span>
+                        <span class="book-price-pre">
+                            $23.39
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Black Privilege"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="Black Privilege" class="book-link" href="" target="_blank">
+                            Black Privilege
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $14.85
+                        </span>
+                        <span class="book-price-pre">
+                            $15.49
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book" style="margin-left:20px;">
+                    <a title="Teammate"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="Teammate" class="book-link" href="" target="_blank">
+                            Teammate
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $14.14
+                        </span>
+                        <span class="book-price-pre">
+                            $16.76
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title=Papi"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="Papi" class="book-link" href="" target="_blank">
+                            Papi
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $16.71
+                        </span>
+                        <span class="book-price-pre">
+                            $16.78
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Magnolia Story"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Magnolia Story" class="book-link" href="" target="_blank">
+                            The Magnolia Story
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $12.11
+                        </span>
+                        <span class="book-price-pre">
+                            $15.38
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="This Fight Is Our Fight">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="This Fight Is Our Fight" class="book-link" href="" target="_blank">
+                            This Fight Is Our Fight
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.93
+                        </span>
+                        <span class="book-price-pre">
+                            $17.00
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="We Are Never Meeting in Real Life"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/Bio&Mem/p10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="We Are Never Meeting in Real Life" class="book-link" href="" target="_blank">
+                            We Are Never Meeting in Real Life
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $10.42
+                        </span>
+                        <span class="book-price-pre">
+                            $11.06
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="exhibit-fir" id="books3" style="display: none">
+        <div class="id-part">
+            <img src="images/classify/Chi.jpg" class="id-rect">
+            <span class="id-context">
+                Children's Books
+            </span>
+        </div>
+        <div class="exh-part">
+            <ul class="book-list">
+                <li class="book" style="margin-left:20px;">
+                    <a title="If Animals Kissed Good Night"  href="BS_pages/BS_item21.html" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="If Animals Kissed Good Night" class="book-link" href="" target="_blank">
+                            If Animals Kissed Good Night
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $34.08
+                        </span>
+                        <span class="book-price-pre">
+                            $43.76
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Mockingjay "  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p2.jpg" alternative="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="Mockingjay " class="book-link" href="" target="_blank">
+                            Mockingjay
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.92
+                        </span>
+                        <span class="book-price-pre">
+                            $8.31
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="A Long Walk to Water"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\ChiBoo/p3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="A Long Walk to Water" class="book-link"  href="" target="_blank">
+                            A Long Walk to Water
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $9.70
+                            </span>
+                        <span class="book-price-pre">
+                            $11.58
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Ugly Stepsister"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\ChiBoo/p4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Ugly Stepsister" class="book-link" href="" target="_blank">
+                            The Ugly Stepsister
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $14.39
+                        </span>
+                        <span class="book-price-pre">
+                            $17.99
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Double Exposure"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="Double Exposure" class="book-link" href="" target="_blank">
+                            Double Exposure
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.21
+                        </span>
+                        <span class="book-price-pre">
+                            $9.86
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book" style="margin-left:20px;">
+                    <a title="Salt to the Sea"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="Salt to the Sea" class="book-link" href="" target="_blank">
+                            Salt to the Sea
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $8.21
+                        </span>
+                        <span class="book-price-pre">
+                            $13.31
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Pax "  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="Pax " class="book-link" href="" target="_blank">
+                            Pax
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $11.80
+                        </span>
+                        <span class="book-price-pre">
+                            $8.97
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Hate U Give"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Hate U Give" class="book-link" href="" target="_blank">
+                            The Hate U Give
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $6.15
+                        </span>
+                        <span class="book-price-pre">
+                            $10.79
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Baby Touch and Feel: Animals"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Baby Touch and Feel: Animals" class="book-link" href="" target="_blank">
+                            Baby Touch and Feel: Animals
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $5.09
+                        </span>
+                        <span class="book-price-pre">
+                            $46.28
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Giving Tree"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/ChiBoo/p10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Giving Tree" class="book-link" href="" target="_blank">
+                            The Giving Tree
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $10.89
+                        </span>
+                        <span class="book-price-pre">
+                            $16.42
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="exhibit-fir" id="books4" style="display: none">
+        <div class="id-part">
+            <img src="images/classify/Cook&Food.jpg" class="id-rect">
+            <span class="id-context">
+                Cookbooks,Food,Wine
+            </span>
+        </div>
+        <div class="exh-part">
+            <ul class="book-list">
+                <li class="book" style="margin-left:20px;">
+                    <a title="Molly on the Range"  href="BS_pages/BS_item31.html" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="Molly on the Range" class="book-link" href="" target="_blank">
+                            Molly on the Range
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.04
+                        </span>
+                        <span class="book-price-pre">
+                            $19.67
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Outdoor Table"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p2.jpg" alternative="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Outdoor Table" class="book-link" href="" target="_blank">
+                            The Outdoor Table
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $6.03
+                        </span>
+                        <span class="book-price-pre">
+                            $12.77
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Pioneer Woman Cooks"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\CFW/p3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Pioneer Woman Cooks" class="book-link"  href="" target="_blank">
+                            The Pioneer Woman Cooks
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $19.0
+                            </span>
+                        <span class="book-price-pre">
+                            $19.49
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Healthy Air Fryer Cookbook"  href="" target="_blank">
+                        <img class="book-img" src="images\exh-fir\CFW/p4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Healthy Air Fryer Cookbook" class="book-link" href="" target="_blank">
+                            The Healthy Air Fryer Cookbook
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $9.59
+                        </span>
+                        <span class="book-price-pre">
+                            $10.68
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Kitchen Matters"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="Kitchen Matters" class="book-link" href="" target="_blank">
+                            Kitchen Matters
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $9.64
+                        </span>
+                        <span class="book-price-pre">
+                            $13.64
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book" style="margin-left:20px;">
+                    <a title="This Cheese is Nuts!"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="This Cheese is Nuts!" class="book-link" href="" target="_blank">
+                            This Cheese is Nuts!
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $11.75
+                        </span>
+                        <span class="book-price-pre">
+                            $15.00
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Minimalist Baker's Everyday Cooking"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="Minimalist Baker's Everyday Cooking" class="book-link" href="" target="_blank">
+                            Minimalist Baker's Everyday Cooking
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $16.58
+                        </span>
+                        <span class="book-price-pre">
+                            $20.83
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Quick & Easy Ketogenic Cooking"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Quick & Easy Ketogenic Cooking" class="book-link" href="" target="_blank">
+                            Quick & Easy Ketogenic Cooking
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $16.11
+                        </span>
+                        <span class="book-price-pre">
+                            $20.31
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Gluten-Free Slow Cooker"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Gluten-Free Slow Cooker" class="book-link" href="" target="_blank">
+                            Gluten-Free Slow Cooker
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $1.54
+                        </span>
+                        <span class="book-price-pre">
+                            $8.94
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Primal Blueprint Quick and Easy Meals"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/CFW/p10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Primal Blueprint Quick and Easy Meals" class="book-link" href="" target="_blank">
+                            Primal Blueprint Quick and Easy Meals
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $8.90
+                        </span>
+                        <span class="book-price-pre">
+                            $15.90
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="exhibit-fir" id="books5" style="display: none">
+        <div class="id-part">
+            <img src="images/classify/His.jpg" class="id-rect">
+            <span class="id-context">
+                History
+            </span>
+        </div>
+        <div class="exh-part">
+            <ul class="book-list">
+                <li class="book" style="margin-left:20px;">
+                    <a title="American Sanctuary"  href="BS_pages/BS_item41.html" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="American Sanctuary" class="book-link" href="" target="_blank">
+                            American Sanctuary
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $16.54
+                        </span>
+                        <span class="book-price-pre">
+                            $23.09
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Fractured Lands"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P2.jpg" alternative="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="Fractured Lands" class="book-link" href="" target="_blank">
+                            Fractured Lands
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $8.88
+                        </span>
+                        <span class="book-price-pre">
+                            $24.13
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The General vs. the President"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="The General vs. the President" class="book-link"  href="" target="_blank">
+                            The General vs. the President
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.59
+                            </span>
+                        <span class="book-price-pre">
+                            $17.95
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Contemporary Japan"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="Contemporary Japan" class="book-link" href="" target="_blank">
+                            Contemporary Japan
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $14.85
+                        </span>
+                        <span class="book-price-pre">
+                            $28.55
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="A History of Food"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="A History of Food" class="book-link" href="" target="_blank">
+                            A History of Food
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $10.40
+                        </span>
+                        <span class="book-price-pre">
+                            $25.99
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book" style="margin-left:20px;">
+                    <a title="Poland in the Modern World"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="Poland in the Modern World" class="book-link" href="" target="_blank">
+                            Poland in the Modern World
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $20.01
+                        </span>
+                        <span class="book-price-pre">
+                            $25.72
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Lean In"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="Lean In" class="book-link" href="" target="_blank">
+                            Lean In
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.03
+                        </span>
+                        <span class="book-price-pre">
+                           $13.45
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Night"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Night" class="book-link" href="" target="_blank">
+                            Night
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                             $6.00
+                        </span>
+                        <span class="book-price-pre">
+                            $11.65
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Zookeeper's Wife"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Zookeeper's Wife" class="book-link" href="" target="_blank">
+                            The Zookeeper's Wife
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $8.00
+                        </span>
+                        <span class="book-price-pre">
+                            $16.00
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Do I Make Myself Clear?"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-fir/His/P10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Do I Make Myself Clear?" class="book-link" href="" target="_blank">
+                            Do I Make Myself Clear?
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                             $18.30
+                        </span>
+                        <span class="book-price-pre">
+                           $30.77
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!--    rotate       -->
+
+    <div class="rotate">
+            <ul class="rotate-tabtitle">
+                <li class="rotate-tabitem-hover"><a class="tabitem-style-hover" href="#content1">Harry Potter</a></li>
+                <li class="rotate-tabitem"><a class="tabitem-style" href="#content2">Seveneves</a></li>
+                <li class="rotate-tabitem"><a class="tabitem-style" href="#content3">A Man Called Ove</a></li>
+            </ul>
+            <div id="content1" class="rotate-tabcontent">
+                <div>
+                    <div><img  class="img-writer" src="images/rotate/w1.jpg"></div>
+                    <div class="info">
+                        <div class="info-writer">J K (Joanne Kathleen) Rowling was born in the summer of 1965 at Yate General Hospital in England and grew up in Chepstow,
+                            Gwent where she went to Wyedean Comprehensive. </div>
+                            <img src="images/rotate/hr.jpg" class="hr">
+                        <div class="info-book">It was always difficult being Harry Potter and it isn’t much easier now that he is an
+                            overworked employee of the Ministry of Magic, a husband and father of three school-age children.</div>
+                    </div>
+                    <div class="info-book"></div>
+                    <div class="img-book">
+                    <div class="book">
+                        <a title="Harry Potter and the Cursed Child, Parts 1 & 2, Special Rehearsal Edition Script "  href="BS_pages/BS_itemw3.html" target="_blank">
+                            <img class="book-img" src="images/rotate/b1.jpg" alt="exhibition1">
+                        </a>
+                        <p class="book-name">
+                            <a title="Harry Potter and the Cursed Child, Parts 1 & 2, Special Rehearsal Edition Script " class="book-link" href="BS_pages/BS_itemw3.html" target="_blank">
+                                Harry Potter and the Cursed Child, Parts 1 & 2, Special Rehearsal Edition Script
+                            </a>
+                        </p>
+                        <span class="book-intro">BS_BookStore</span>
+
+                        <p class="book-price">
+                        <span class="book-price-now">
+                            $8.28
+                        </span>
+                            <span class="book-price-pre">
+                            $14.99
+                        </span>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="content2" class="rotate-tabcontent" style="display: none">
+                <div>
+                    <div><img  class="img-writer" src="images/rotate/w2.jpg"></div>
+
+                    <div class="info">
+                        <div class="info-writer">Neal Town Stephenson (born October 31, 1959) is an American writer, known for his speculative fiction works.</div>
+                        <img src="images/rotate/hr.jpg" class="hr">
+                        <div class="info-book">A catastrophic event renders the earth a ticking time bomb. In a feverish race against the inevitable,
+                            nations around the globe band together to devise an ambitious plan to ensure the survival of humanity far beyond our atmosphere,
+                            in outer space.</div>
+                    </div>
+
+                    <div class="info-book"></div>
+                    <div class="img-book">
+                        <div class="book">
+                            <a title="Seveneves: A Novel"  href="BS_pages/BS_itemw2.html" target="_blank">
+                                <img class="book-img" src="images/rotate/b2.jpg" alt="exhibition1">
+                            </a>
+                            <p class="book-name">
+                                <a title="Seveneves: A Novel" class="book-link" href="BS_pages/BS_itemw2.html" target="_blank">
+                                    Seveneves: A Novel
+                                </a>
+                            </p>
+                            <span class="book-intro">BS_BookStore</span>
+
+                            <p class="book-price">
+                        <span class="book-price-now">
+                            $11.48
+                        </span>
+                                <span class="book-price-pre">
+                            $11.57
+                        </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="content3" class="rotate-tabcontent" style="display: none">
+                <div>
+                    <div><img  class="img-writer" src="images/rotate/w3.jpg"></div>
+
+                    <div class="info">
+                        <div class="info-writer">Fredrik Backman, a blogger and columnist, is the New York Times bestselling author of A MAN CALLED OVE
+                            and MY GRANDMOTHER ASKED ME TO TELL YOU SHE’S SORRY.
+                        </div>
+                        <img src="images/rotate/hr.jpg" class="hr">
+                        <div class="info-book">Behind the cranky exterior there is a story and a sadness.
+                            So when one November morning a chatty young couple with two chatty young daughters move in next door and accidentally flatten Ove’s mailbox.
+                        </div>
+                    </div>
+
+                    <div class="info-book"></div>
+                    <div class="img-book">
+                        <div class="book">
+                            <a title="A Man Called Ove"  href="BS_pages/BS_itemw1.html" target="_blank">
+                                <img class="book-img" src="images/rotate/b3.jpg" alt="exhibition1">
+                            </a>
+                            <p class="book-name">
+                                <a title="A Man Called Ove" class="book-link" href="BS_pages/BS_itemw1.html" target="_blank">
+                                    A Man Called Ove
+                                </a>
+                            </p>
+                            <span class="A Man Called Ove">BS_BookStore</span>
+
+                            <p class="book-price">
+                        <span class="book-price-now">
+                            $9.60
+                        </span>
+                                <span class="book-price-pre">
+                            $16.21
+                        </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+
+    <!--      exhibit-sec     -->
+    <div>
+
+    <div class="exhibit-sec" id="books6">
+        <div class="id-part">
+            <img src="images/classify/Lit&Fic.jpg" class="id-rect2">
+            <span class="id-context">
+                Literature&Fiction
+            </span>
+        </div>
+        <div class="exh-part">
+
+            <ul class="book-list">
+                <li class="book">
+                    <a title="The Confusion of Languages"  href="BS_pages/BS_item51.html" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P1.jpg" alt="exhibition1">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Confusion of Languages" class="book-link" href="" target="_blank">
+                            The Confusion of Languages
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $42.70
+                        </span>
+                        <span class="book-price-pre">
+                            $60.77
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Kite Runner"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P2.jpg" alt="exhibition2">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Kite Runner" class="book-link" href="" target="_blank">
+                            The Kite Runner
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.95
+                        </span>
+                        <span class="book-price-pre">
+                           $13.18
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Story of a New Name"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P3.jpg" alt="exhibition3">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Story of a New Name" class="book-link"  href="" target="_blank">
+                            The Story of a New Name
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $26.97
+                        </span>
+                        <span class="book-price-pre">
+                           $29.17
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="A Man Called Ove"  href="BS_pages/BS_itemr1.html" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P4.jpg" alt="exhibition4">
+                    </a>
+                    <p class="book-name">
+                        <a title="A Man Called Ove" class="book-link" href="BS_pages/BS_itemr1.html" target="_blank">
+                            A Man Called Ove
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.48
+                        </span>
+                        <span class="book-price-pre">
+                            $9.98
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="All the Light We Cannot See"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P5.jpg" alt="exhibition5">
+                    </a>
+                    <p class="book-name">
+                        <a title="All the Light We Cannot See" class="book-link" href="" target="_blank">
+                            All the Light We Cannot See
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $5.00
+                        </span>
+                        <span class="book-price-pre">
+                           $9.99
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Shack"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P6.jpg" alt="exhibition6">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Shack" class="book-link" href="" target="_blank">
+                            The Shack
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $13.58
+                        </span>
+                        <span class="book-price-pre">
+                           $26.98
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="The Book Thief"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P7.jpg" alt="exhibition7">
+                    </a>
+                    <p class="book-name">
+                        <a title="The Book Thief" class="book-link" href="" target="_blank">
+                            The Book Thief
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $7.54
+                        </span>
+                        <span class="book-price-pre">
+                            $9.89
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="To Kill a Mockingbird"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P8.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="To Kill a Mockingbird" class="book-link" href="" target="_blank">
+                            To Kill a Mockingbird
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $13.78
+                        </span>
+                        <span class="book-price-pre">
+                            $14.42
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="American Gods"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P9.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="American Gods" class="book-link" href="" target="_blank">
+                            American Gods
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $15.29
+                        </span>
+                        <span class="book-price-pre">
+                            $16.80
+                        </span>
+                    </p>
+                </li>
+
+
+                <li class="book">
+                    <a title="Testimony"  href="" target="_blank">
+                        <img class="book-img" src="images/exh-sec/Liter%20&%20Fic/P10.jpg" alt="exhibition8">
+                    </a>
+                    <p class="book-name">
+                        <a title="Testimony" class="book-link" href="" target="_blank">
+                            Testimony
+                        </a>
+                    </p>
+                    <span class="book-intro">BS_BookStore</span>
+
+                    <p class="book-price">
+                        <span class="book-price-now">
+                            $17.36
+                        </span>
+                        <span class="book-price-pre">
+                            $19.80
+                        </span>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="exhibit-sec" id="books7" style="display: none;">
+    <div class="id-part">
+        <img src="images/classify/Rom.png" class="id-rect2">
+        <span class="id-context">
+                Romance
+            </span>
+    </div>
+    <div class="exh-part">
+
+        <ul class="book-list">
+            <li class="book">
+                <a title="Milk and Honey"  href="BS_pages/BS_item61.html" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P11.jpg" alt="exhibition1">
+                </a>
+                <p class="book-name">
+                    <a title="Milk and Honey" class="book-link" href="" target="_blank">
+                        Milk and Honey
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $17.01
+                        </span>
+                    <span class="book-price-pre">
+                            $17.10
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="In Farleigh Field"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P12.jpg" alt="exhibition2">
+                </a>
+                <p class="book-name">
+                    <a title="In Farleigh Field" class="book-link" href="" target="_blank">
+                        In Farleigh Field
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $8.10
+                        </span>
+                    <span class="book-price-pre">
+                            $13.55
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="One Thousand White Women"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P13.jpg" alt="exhibition3">
+                </a>
+                <p class="book-name">
+                    <a title="One Thousand White Women" class="book-link"  href="" target="_blank">
+                        One Thousand White Women
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $4.67
+                        </span>
+                    <span class="book-price-pre">
+                           $10.71
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Wish Me Home"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P14.jpg" alt="exhibition4">
+                </a>
+                <p class="book-name">
+                    <a title="Wish Me Home" class="book-link" href="" target="_blank">
+                        Wish Me Home
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                           $9.60
+                        </span>
+                    <span class="book-price-pre">
+                            $16.21
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Where Eagles Dare"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P15.jpg" alt="exhibition5">
+                </a>
+                <p class="book-name">
+                    <a title="Where Eagles Dare" class="book-link" href="" target="_blank">
+                        Where Eagles Dare
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $10.40
+                        </span>
+                    <span class="book-price-pre">
+                            $15.98
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="A Country Year"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P16.jpg" alt="exhibition6">
+                </a>
+                <p class="book-name">
+                    <a title="A Country Year" class="book-link" href="" target="_blank">
+                        A Country Year
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $8.81
+                        </span>
+                    <span class="book-price-pre">
+                           $13.80
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Silent Wife"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P17.jpg" alt="exhibition7">
+                </a>
+                <p class="book-name">
+                    <a title="The Silent Wife" class="book-link" href="" target="_blank">
+                        The Silent Wife
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                             $7.98
+                        </span>
+                    <span class="book-price-pre">
+                            $11.76
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Love Story"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P18.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Love Story" class="book-link" href="" target="_blank">
+                        Love Story
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.89
+                        </span>
+                    <span class="book-price-pre">
+                           $19.99
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Identicals"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P19.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="The Identicals" class="book-link" href="" target="_blank">
+                        The Identicals
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $11.99
+                        </span>
+                    <span class="book-price-pre">
+                            $18.62
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Against All Odds"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Roman/P20.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Against All Odds" class="book-link" href="" target="_blank">
+                        Against All Odds
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                           $15.99
+                        </span>
+                    <span class="book-price-pre">
+                            $16.80
+                        </span>
+                </p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+    <div class="exhibit-sec" id="books8" style="display: none;">
+    <div class="id-part">
+        <img src="images/classify/Mys&Sus.jpg" class="id-rect2">
+        <span class="id-context">
+                Mystery&Suspense
+            </span>
+    </div>
+    <div class="exh-part">
+
+        <ul class="book-list">
+            <li class="book">
+                <a title="Fly by Night"  href="BS_pages/BS_item71.html" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P1.jpg" alt="exhibition1">
+                </a>
+                <p class="book-name">
+                    <a title="Fly by Night" class="book-link" href="" target="_blank">
+                        Fly by Night
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $15.00
+                        </span>
+                    <span class="book-price-pre">
+                            $17.88
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Dead Key"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P2.jpg" alt="exhibition2">
+                </a>
+                <p class="book-name">
+                    <a title="The Dead Key" class="book-link" href="" target="_blank">
+                        The Dead Key
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                             $2.30
+                        </span>
+                    <span class="book-price-pre">
+                            $6.49
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Hidden"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P3.jpg" alt="exhibition3">
+                </a>
+                <p class="book-name">
+                    <a title="Hidden" class="book-link"  href="" target="_blank">
+                        Hidden
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.99
+                        </span>
+                    <span class="book-price-pre">
+                            $9.99
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The River Is Dark"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P4.jpg" alt="exhibition4">
+                </a>
+                <p class="book-name">
+                    <a title="The River Is Dark" class="book-link" href="" target="_blank">
+                        The River Is Dark
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                             $7.48
+                        </span>
+                    <span class="book-price-pre">
+                            $9.92
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Devil's Library"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P5.jpg" alt="exhibition5">
+                </a>
+                <p class="book-name">
+                    <a title="The Devil's Library" class="book-link" href="" target="_blank">
+                        The Devil's Library
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                           $13.00
+                        </span>
+                    <span class="book-price-pre">
+                           $13.99
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="A Criminal Defense"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P6.jpg" alt="exhibition6">
+                </a>
+                <p class="book-name">
+                    <a title="A Criminal Defense" class="book-link" href="" target="_blank">
+                        A Criminal Defense
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                           $9.94
+                        </span>
+                    <span class="book-price-pre">
+                           $10.94
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Stillhouse Lake"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P7.jpg" alt="exhibition7">
+                </a>
+                <p class="book-name">
+                    <a title="Stillhouse Lake" class="book-link" href="" target="_blank">
+                        Stillhouse Lake
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $7.74
+                        </span>
+                    <span class="book-price-pre">
+                           $10.22
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Golden Prey>"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P8.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Golden Prey>" class="book-link" href="" target="_blank">
+                        Golden Prey>
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                           $16.70
+                        </span>
+                    <span class="book-price-pre">
+                            $20.19
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Into the Water"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P9.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Into the Water" class="book-link" href="" target="_blank">
+                        Into the Water
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $16.72
+                        </span>
+                    <span class="book-price-pre">
+                            $21.15
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Roses of May"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Mys&Sus/P10.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="The Roses of May" class="book-link" href="" target="_blank">
+                        The Roses of May
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $6.55
+                        </span>
+                    <span class="book-price-pre">
+                            $10.31
+                        </span>
+                </p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+    <div class="exhibit-sec" id="books9" style="display: none;">
+    <div class="id-part">
+        <img src="images/classify/Sci&Fan.png" class="id-rect2">
+        <span class="id-context">
+                Sci-Fi&Fantasy
+            </span>
+    </div>
+    <div class="exh-part">
+
+        <ul class="book-list">
+            <li class="book">
+                <a title="The Dark Tower I"  href="BS_pages/BS_item81.html" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P1.jpg" alt="exhibition1">
+                </a>
+                <p class="book-name">
+                    <a title="The Dark Tower I" class="book-link" href="" target="_blank">
+                        The Dark Tower I
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $9.58
+                        </span>
+                    <span class="book-price-pre">
+                            $24.75
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Leviathan Wakes"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P2.jpg" alt="exhibition2">
+                </a>
+                <p class="book-name">
+                    <a title="Leviathan Wakes" class="book-link" href="" target="_blank">
+                        Leviathan Wakes
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $11.33
+                        </span>
+                    <span class="book-price-pre">
+                            $42.00
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Man of Legends"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P3.jpg" alt="exhibition3">
+                </a>
+                <p class="book-name">
+                    <a title="The Man of Legends" class="book-link"  href="" target="_blank">
+                        The Man of Legends
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $9.08
+                        </span>
+                    <span class="book-price-pre">
+                            $10.73
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Legend of Vanx Malic Books I-IV Bundle"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P4.jpg" alt="exhibition4">
+                </a>
+                <p class="book-name">
+                    <a title="The Legend of Vanx Malic Books I-IV Bundle" class="book-link" href="" target="_blank">
+                        The Legend of Vanx Malic Books I-IV Bundle
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $25.05
+                        </span>
+                    <span class="book-price-pre">
+                            $30.57
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Player's Handbook"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P5.jpg" alt="exhibition5">
+                </a>
+                <p class="book-name">
+                    <a title="Player's Handbook" class="book-link" href="" target="_blank">
+                        Player's Handbook
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $24.12
+                        </span>
+                    <span class="book-price-pre">
+                            $29.59
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Beren and Luthien"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P6.jpg" alt="exhibition6">
+                </a>
+                <p class="book-name">
+                    <a title="Beren and Luthien" class="book-link" href="" target="_blank">
+                        Beren and Luthien
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $18.00
+                        </span>
+                    <span class="book-price-pre">
+                            $25.81
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Alex & Me"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P7.jpg" alt="exhibition7">
+                </a>
+                <p class="book-name">
+                    <a title="Alex & Me" class="book-link" href="" target="_blank">
+                        Alex & Me
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $8.43
+                        </span>
+                    <span class="book-price-pre">
+                            $14.97
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="American Gods"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P8.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="American Gods" class="book-link" href="" target="_blank">
+                        American Gods
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $11.99
+                        </span>
+                    <span class="book-price-pre">
+                            $18.62
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Station Eleven"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P9.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Station Eleven" class="book-link" href="" target="_blank">
+                        Station Eleven
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $9.52
+                        </span>
+                    <span class="book-price-pre">
+                            $29.37
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Black Elfstone"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Sci&Fan/P10.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="The Black Elfstone" class="book-link" href="" target="_blank">
+                        The Black Elfstone
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $18.07
+                        </span>
+                    <span class="book-price-pre">
+                            $19.05
+                        </span>
+                </p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+    <div class="exhibit-sec" id="books10" style="display: none;">
+    <div class="id-part">
+        <img src="images/classify/Tee&You.jpg" class="id-rect2">
+        <span class="id-context">
+                Teens&YoungAdult
+            </span>
+    </div>
+    <div class="exh-part">
+
+        <ul class="book-list">
+            <li class="book">
+                <a title="The Passion of Dolssa"  href="BS_pages/BS_item91.html" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P1.jpg" alt="exhibition1">
+                </a>
+                <p class="book-name">
+                    <a title="The Passion of Dolssa" class="book-link" href="" target="_blank">
+                        The Passion of Dolssa
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $8.86
+                        </span>
+                    <span class="book-price-pre">
+                            $10.63
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="March"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P2.jpg" alt="exhibition2">
+                </a>
+                <p class="book-name">
+                    <a title="March" class="book-link" href="" target="_blank">
+                        March
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $11.96
+                        </span>
+                    <span class="book-price-pre">
+                            $30.64
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="I Am the Messenger"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P3.jpg" alt="exhibition3">
+                </a>
+                <p class="book-name">
+                    <a title="I Am the Messenger" class="book-link"  href="" target="_blank">
+                        I Am the Messenger
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.62
+                        </span>
+                    <span class="book-price-pre">
+                            $10.07
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Book Thief"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P4.jpg" alt="exhibition4">
+                </a>
+                <p class="book-name">
+                    <a title="The Book Thief" class="book-link" href="" target="_blank">
+                        The Book Thief
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.60
+                        </span>
+                    <span class="book-price-pre">
+                            $11.76
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Code Name Verity"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P5.jpg" alt="exhibition5">
+                </a>
+                <p class="book-name">
+                    <a title="Code Name Verity" class="book-link" href="" target="_blank">
+                        Code Name Verity
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.95
+                        </span>
+                    <span class="book-price-pre">
+                            $8.92
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Underdogs"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P6.jpg" alt="exhibition6">
+                </a>
+                <p class="book-name">
+                    <a title="Underdogs" class="book-link" href="" target="_blank">
+                        Underdogs
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $10.62
+                        </span>
+                    <span class="book-price-pre">
+                            $12.95
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Between Shades of Gray"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P7.jpg" alt="exhibition7">
+                </a>
+                <p class="book-name">
+                    <a title="Between Shades of Gray" class="book-link" href="" target="_blank">
+                        Between Shades of Gray
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $5.69
+                        </span>
+                    <span class="book-price-pre">
+                            $19.83
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="P.S. I Still Love You"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P8.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="P.S. I Still Love You" class="book-link" href="" target="_blank">
+                        P.S. I Still Love You
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $6.54
+                        </span>
+                    <span class="book-price-pre">
+                            $12.58
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="The Flip Side"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P9.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="The Flip Side" class="book-link" href="" target="_blank">
+                        The Flip Side
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $6.96
+                        </span>
+                    <span class="book-price-pre">
+                            $7.83
+                        </span>
+                </p>
+            </li>
+
+
+            <li class="book">
+                <a title="Always and Forever, Lara Jean"  href="" target="_blank">
+                    <img class="book-img" src="images/exh-sec/Teens&Young/P10.jpg" alt="exhibition8">
+                </a>
+                <p class="book-name">
+                    <a title="Always and Forever, Lara Jean" class="book-link" href="" target="_blank">
+                        Always and Forever, Lara Jean
+                    </a>
+                </p>
+                <span class="book-intro">BS_BookStore</span>
+
+                <p class="book-price">
+                        <span class="book-price-now">
+                            $10.08
+                        </span>
+                    <span class="book-price-pre">
+                            $11.30
+                        </span>
+                </p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <!--fixed tips-->
+    <div class="tips">
+        <canvas id="tips-can">
+        </canvas>
+    </div>
+
+<!--right frame-->
+<div class="frame-right">
+
+    <!--books classification-->
+    <div class="bargain">
+        <div class="bar-time">
+            <div id="countdown">
+                <div id="timebox" class="color-full">
+                    <span class="span-initial">00:</span>
+                    <span class="span-initial">01:</span>
+                    <span class="span-initial">00</span>
+                </div>
+                <div class="timebox-label">
+                    Time Remaining
+                </div>
+            </div>
+        </div>
+
+        <div class="show-item">
+
+            <div id="tag-start">
+
+                <div class="bar-item">
+            <div class="bar-fla">Flash Sale</div>
+            <a href="BS_pages/BS_itemf10.html" target="_blank">
+                <img class="bar-book" src="images/bargain/p1.jpg" height="747" width="600"/>
+            </a>
+
+            <p class="book-name" style="margin-left: 20px;">
+                <a title="JavaScript&Jquery" class="book-link" href="BS_pages/BS_itemf10.html" target="_blank">
+                    JavaScript&Jquery
+                </a>
+            </p>
+            <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+            <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            ￥65.80
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            ￥102.60
+                        </span>
+            </p>
+            <div class="bar-met">
+                <p class="bar-met-p">85%</p>
+                <meter class="bar-met-l" value="85" min="1" max="100" low="30" high="60" optimum="1"></meter>
+            </div>
+
+
+        </div>
+                <a href="BS_pages/BS_itemf10.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+        </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf2.html" target="_blank">
+                        <img class="bar-book" src="images/page_details/f2-Divergent/p1.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="Divergent" class="book-link" href="BS_pages/BS_itemf2.html" target="_blank">
+                            Divergent
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $11.89
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $20.30
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">70%</p>
+                        <meter class="bar-met-l" value="70" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf2.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf3.html" target="_blank">
+                        <img class="bar-book" src="images/bargain/p13.png" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="The Young Elites" class="book-link" href="BS_pages/BS_itemf3.html" target="_blank">
+                            The Young Elites
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $10.35
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $22.30
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">10%</p>
+                        <meter class="bar-met-l" value="10" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf3.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf1.html" target="_blank">
+                        <img class="bar-book" src="images/bargain/p4.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="ELEANOR & PARK" class="book-link" href="BS_pages/BS_itemf1.html" target="_blank">
+                            ELEANOR & PARK
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $14.26
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $23.65
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">42%</p>
+                        <meter class="bar-met-l" value="42" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf1.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf4.html" target="_blank">
+                        <img class="bar-book" src="images/page_details/f4-Twilight/p1.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="Twilight" class="book-link" href="BS_pages/BS_itemf4.html" target="_blank">
+                            Twilight
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $3.99
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $12.50
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">65%</p>
+                        <meter class="bar-met-l" value="65" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf4.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf5.html" target="_blank">
+                        <img class="bar-book" src="images/page_details/f5-Thirteen%20Reasons%20Why/p1.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="Thirteen Reasons Why" class="book-link" href="BS_pages/BS_itemf5.html" target="_blank">
+                            Thirteen Reasons Why
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $9.59
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $30.10
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">78%</p>
+                        <meter class="bar-met-l" value="78" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf5.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf6.html" target="_blank">
+                        <img class="bar-book" src="images/bargain/p17.png" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="The Fault in Our Stars" class="book-link" href="BS_pages/BS_itemf6.html" target="_blank">
+                            The Fault in Our Stars
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $11.39
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $20.10
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">98%</p>
+                        <meter class="bar-met-l" value="98" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf6.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf7.html" target="_blank">
+                        <img class="bar-book" src="images/bargain/p8.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="THE BOOK THIEF" class="book-link" href="BS_pages/BS_itemf7.html" target="_blank">
+                            THE BOOK THIEF
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $10.54
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $19.50
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">63%</p>
+                        <meter class="bar-met-l" value="63" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf7.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf8.html" target="_blank">
+                        <img class="bar-book" src="images/page_details/f8-Harry%20Potter/p1.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="Harry Potter" class="book-link" href="BS_pages/BS_itemf8.html" target="_blank">
+                            Harry Potter
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $5.56
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $23.10
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">23%</p>
+                        <meter class="bar-met-l" value="23" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf8.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="tag-end" style="display: none;">
+
+                <div class="bar-item">
+                    <div class="bar-fla">Flash Sale</div>
+                    <a href="BS_pages/BS_itemf9.html" target="_blank">
+                        <img class="bar-book" src="images/bargain/p10.jpg" height="747" width="600"/>
+                    </a>
+
+                    <p class="book-name" style="margin-left: 20px;">
+                        <a title="STARGIRL " class="book-link" href="BS_pages/BS_itemf9.html" target="_blank">
+                            STARGIRL
+                        </a>
+                    </p>
+                    <span class="book-intro" style="margin-left: 20px;">BS_BookStore</span>
+
+                    <p class="book-price"  style="margin-left: 17px;">
+                        <span class="book-price-now bar-pri">
+                            $5.86
+                        </span>
+                        <span class="book-price-pre bar-pri-o">
+                            $17.62
+                        </span>
+                    </p>
+                    <div class="bar-met">
+                        <p class="bar-met-p">98%</p>
+                        <meter class="bar-met-l" value="98" min="1" max="100" low="30" high="60" optimum="1"></meter>
+                    </div>
+
+
+                </div>
+
+                <a href="BS_pages/BS_itemf9.html" style="text-decoration: none;">
+                    <div class="but-fla">
+                        <p class="p-fla">SNAP UP</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="circle">
+        <table>
+            <caption>
+                Limited Time Bargain
+            </caption>
+            <thead>
+                <th>Name</th>
+                <th>Order</th>
+            </thead>
+            <tbody>
+                <tr class="show-now show-start">
+                    <td>Js&Juery</td>
+                    <td>Now</td>
+                </tr>
+
+                <tr>
+                    <td>Divergent</td>
+                    <td>1min</td>
+                </tr>
+
+                <tr>
+                    <td>The Young Elites</td>
+                    <td>2min</td>
+                </tr>
+
+                <tr>
+                    <td>Eleanor & Park</td>
+                    <td>3min</td>
+                </tr>
+
+                <tr>
+                    <td>Twilight</td>
+                    <td>4min</td>
+                </tr>
+
+                <tr>
+                    <td>Thirteen Reasons Why</td>
+                    <td>5min</td>
+                </tr>
+
+                <tr>
+                    <td>The Fault in Our Stars</td>
+                    <td>6min</td>
+                </tr>
+
+                <tr>
+                    <td>The Book Thief </td>
+                    <td>7min</td>
+                </tr>
+
+                <tr>
+                    <td>Harry Potter </td>
+                    <td>8min</td>
+                </tr>
+
+                <tr>
+                    <td>Stargirl</td>
+                    <td>9min</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <!--list-->
+
+    <div class="list">
+        <div class="list-book">
+            <div class="list-book-title">
+                <div class="list-book-title-left">
+                    <p class="tab-rank">Hot Books</p>
+                </div>
+                <div class="list-book-title-right">
+                    <p class="tab-rank">Hot Writers</p>
+                </div>
+            </div>
+
+            <div class="list-book-part" id="list-book-p1">
+
+
+                <div class="list-book-item list-book-hover" id="list-item1">
+
+                    <div class="part1">
+                    <a href="BS_pages/BS_iteml1.html">
+                        <img class="l-item-img" src="images/list/p1.jpg">
+                    </a>
+                    <div class="l-item">
+                        <div class="l-item-point">No.1</div>
+                        <a class="l-item-t" href="BS_pages/BS_iteml1.html">Fifty Shades of Grey</a>
+                        <span class="l-item-i">Comments</span>
+                        <div class="l-item-pri">
+                            <span class="l-item-pn">$12.60</span>
+                            <span class="l-item-po">$23.20</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="part2" style="display: none">
+                        <div>
+                            <div class="l-item-point">No.1</div>
+                            <a href="BS_pages/BS_iteml1.html" class="noneline"><div class="l-item-nor">Fifty Shades of Grey</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item2">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml2.html">
+                            <img class="l-item-img" src="images/list/p2.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point">No.2</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml2.html">The Hungry Game</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$5.60</span>
+                                <span class="l-item-po">$6.20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point">No.2</div>
+                            <a href="BS_pages/BS_iteml2.html" class="noneline"><div class="l-item-nor">The Hunger Games</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item3">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml3.html">
+                            <img class="l-item-img" src="images/list/p3.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point">No.3</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml3.html">Catching Fire</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$5.60</span>
+                                <span class="l-item-po">$12.80</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point">No.3</div>
+                            <a href="BS_pages/BS_iteml3.html" class="noneline"><div class="l-item-nor" >Catching Fire</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item4">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml4.html">
+                            <img class="l-item-img" src="images/list/p4.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.4</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml4.html">Mockingjay</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$13.60</span>
+                                <span class="l-item-po">$25.20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.4</div>
+                            <a href="BS_pages/BS_iteml4.html" class="noneline"><div class="l-item-nor">Mockingjay</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item5">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml5.html">
+                            <img class="l-item-img" src="images/list/p5.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.5</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml5.html">Fifty Shades Darker</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$26.80</span>
+                                <span class="l-item-po"><04></04>8.20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.5</div>
+                            <a href="BS_pages/BS_iteml5.html" class="noneline"><div class="l-item-nor">Fifty Shades Darker</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item6">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml6.html">
+                            <img class="l-item-img" src="images/list/p6.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.6</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml6.html">StrengthsFinder 2.0</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$11.00</span>
+                                <span class="l-item-po">$25.20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.6</div>
+                            <a href="BS_pages/BS_iteml6.html" class="noneline"><div class="l-item-nor">StrengthsFinder 2.0</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item7">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml7.html">
+                            <img class="l-item-img" src="images/list/p7.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.7</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml7.html">Gone Girl</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$19.60</span>
+                                <span class="l-item-po">$26.60</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.7</div>
+                            <a href="BS_pages/BS_iteml7.html" class="noneline"><div class="l-item-nor">Gone Girl</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item8">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml8.html">
+                            <img class="l-item-img" src="images/list/p8.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.8</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml8.html">Fifty Shades Freed</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$7.50</span>
+                                <span class="l-item-po">$12.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.8</div>
+                            <a href="BS_pages/BS_iteml8.html" class="noneline"><div class="l-item-nor">Fifty Shades Freed</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item9">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml9.html">
+                            <img class="l-item-img" src="images/list/p9.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.9</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml9.html">The Help</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$15.60</span>
+                                <span class="l-item-po">$25.60</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.9</div>
+                            <a href="BS_pages/BS_iteml9.html" class="noneline"><div class="l-item-nor">The Help</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item10">
+                    <div class="part1" style="display: none">
+                        <a href="BS_pages/BS_iteml10.html">
+                            <img class="l-item-img" src="images/list/p10.jpg">
+                        </a>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.10</div>
+                            <a class="l-item-t" href="BS_pages/BS_iteml10.html">Unbroken</a>
+                            <span class="l-item-i">Comments</span>
+                            <div class="l-item-pri">
+                                <span class="l-item-pn">$16.00</span>
+                                <span class="l-item-po">$20.50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.10</div>
+                            <a href="BS_pages/BS_iteml10.html" class="noneline"><div class="l-item-nor">Unbroken</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part two -->
+            <div class="list-book-part" id="list-book-p2" style="display:none;">
+
+                <div class="list-book-item list-book-hover" id="list-item-w1">
+
+                    <div class="part1">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w1.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point">No.1</div>
+                            <div class="l-item-t">Rachel Ignotofsky</div>
+                            <span class="l-item-i">Writer</span>
+
+                        </div>
+                    </div>
+
+                    <div class="part2" style="display: none">
+                        <div>
+                            <div class="l-item-point">No.1</div>
+                            <div><div class="l-item-nor">Rachel Ignotofsky</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w2">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w2.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point">No.2</div>
+                            <div class="l-item-t">Elie Wiesel</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point">No.2</div>
+                            <div><div class="l-item-nor">Elie Wiesel</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w3">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w3.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point">No.3</div>
+                            <div class="l-item-t">Marcus Thompson</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point">No.3</div>
+                            <div><div class="l-item-nor">Marcus Thompson</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w4">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w4.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.4</div>
+                            <div class="l-item-t">Vance, J. D.</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.4</div>
+                            <div><div class="l-item-nor">Vance, J. D.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w5">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w5.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.5</div>
+                            <div class="l-item-t">Roxane Gay</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.5</div>
+                            <div><div class="l-item-nor">Roxane Gay</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w6">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w6.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.6</div>
+                            <div class="l-item-t">Paul Kalanithi</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.6</div>
+                            <div><div class="l-item-nor">Paul Kalanithi</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w7">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w7.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.7</div>
+                            <div class="l-item-t">Robert Greene</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.7</div>
+                            <div><div class="l-item-nor">Robert Greene</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w8">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w8.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.8</div>
+                            <div class="l-item-t">Ron Chernow</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.8</div>
+                            <div><div class="l-item-nor">Ron Chernow</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w9">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w9.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.9</div>
+                            <div class="l-item-t">Rebecca Skloot</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.9</div>
+                            <div><div class="l-item-nor">Rebecca Skloot</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-book-item" id="list-item-w10">
+                    <div class="part1" style="display: none">
+                        <div>
+                            <img class="l-item-img" src="images/list/writer/w10.jpg">
+                        </div>
+                        <div class="l-item">
+                            <div class="l-item-point-b">No.10</div>
+                            <div class="l-item-t">Shetterly, Margot Lee</div>
+                            <span class="l-item-i">Writer</span>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div>
+                            <div class="l-item-point-b">No.10</div>
+                            <div><div class="l-item-nor">Shetterly, Margot Lee</div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="frame-foot" id="contact">
+    <a href="BS_index.html">
+        <img class="foot-line" src="images/foot/line.jpg">
+    </a>
+    <div class="foot-box-m">
+    <div class="foot-box foot-edge">
+        <img class="foot-img"  src="images/foot/p1.PNG">
+        <p class="foot-item">Commitment to <br />Salable Books</p>
+    </div>
+    <div class="foot-box">
+        <img class="foot-img" src="images/foot/p2.PNG">
+        <p class="foot-item">Shopping Securely<br />Cash on Delivery</p>
+    </div>
+    <div class="foot-box">
+        <img class="foot-img" src="images/foot/p3.PNG">
+        <p class="foot-item">Most of the Cities<br />Next Day Air</p>
+    </div>
+    <div class="foot-box">
+        <img class="foot-img" src="images/foot/p4.PNG">
+        <p class="foot-item">Sales Return<br />Face to Face</p>
+    </div>
+    </div>
+    <div class="store-details">
+        <div class="details-list" style="margin-left: 30px;">
+            <p class="details-le">Contact Us</p>
+            <br/>
+            <br/>
+            <div class="details-te">Telephone:  17812345678</div>
+            <br/>
+            <div class="details-te">Email:  NewBies@firefox.com</div>
+            <br/>
+            <div class="details-te">WeChat:  newbies2015</div>
+        </div>
+        <div class="details-list" style="margin-left:60px;width:250px;">
+            <p class="details-le">Blogroll</p>
+            <br/>
+            <br/>
+            <a class="details-te" href="https://www.amazon.cn/图书/b/ref=sa_menu_top_books_l1?ie=UTF8&node=658390051">Amazon</a>
+            <br/>
+            <a class="details-te" href="http://book.dangdang.com/">Dangdang</a>
+            <br/>
+            <a class="details-te" href="http://www.china-pub.com/">China-pub</a>
+        </div>
+        <div class="details-list list-edge">
+            <p class="details-le">Method of payment</p>
+            <br/>
+            <br/>
+            <div class="details-te">Credit</div>
+            <br/>
+            <div class="details-te">Alipay</div>
+            <br/>
+            <div class="details-te">WeChat</div>
+        </div>
+    </div>
+    <div class="foot-right">
+        <p class="foot-right-p">All Copyright Reserved by Newbies</p>
+        <h3 class="foot-right-h">BS_BookStore</h3>
+    </div>
+</div>
+
+
+<!--
+<div id="form" style="display:none;">
+    <form name="f">
+        <div class="login-part1">
+            <label for="username" class="login-text1">User Name</label>
+            <input type="text" id="username" class="textfield"/>
+        </div>
+
+        <br>
+        <div class="login-part1">
+            <label for="passwd" class="login-text1">Password</label>
+            <input type="password" id="passwd" class="textfield"/>
+        </div>
+        <br>
+        <div class="loginbtn">
+            <input type="button" value="Log In" id="loginbtn" class="login-btn-fir"/>
+        </div>
+        <div class="loginform">
+            <hr class="hrLine" style="width:75px;"/>BookShop's new customer<hr class="hrLine" style="width:60px;" />
+        </div>
+        <div class="loginbtn" style="margin-top:30px;">
+            <a href="details/Account1.html"><input type="button"  value="Register"  class="login-btn-fir" align="center"/></a>
+        </div>
+    </form>
+</div>
+-->
+
+    <!-- logo
+
+    <div class="logo">
+        <canvas>
+
+        </canvas>
+    </div>-->
+
+    <!-- search engine-->
+    <!--
+    <div class="search">
+        <nav>
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    -->
+
+    <!-- link tips-->
+    <!--
+    <div class="tips">
+        <canvas>
+
+        </canvas>
+    </div>
+    -->
+    <!-- everyday's recommendation
+    <div class="recom">
+
+    </div>-->
+
+    <!--rolling player-->
+    <!--
+    <div class="roller">
+
+    </div>
+    -->
+    <!--books classification-->
+    <!--
+    <div class="classify">
+
+    </div>
+    -->
+    <!--cross line-->
+    <!--
+    <div class="separator">
+
+    </div>
+    -->
+    <!--exhibitation-->
+<!--
+    <div class="exhibit-fir">
+
+    </div>
+    -->
+
+
+</body>
+</html>

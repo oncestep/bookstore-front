@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../../css/Account1.css"/>
+<style type="text/css">
+input{
+	height:30px;
+	}
+</style>
+
+<script src="../../js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    alert("You should click the 'get the verification code' button before you finish the register");
+    function turns() {
+        var ck = document.getElementById("check");
+        var oc =ck.onclick;
+        var p=parseInt(oc)
+        if (p%2==1) {
+            document.getElementById("sign").disabled = false;
+        }
+        else {
+            document.getElementById("sign").disabled = true;
+        }
+    }
+</script>
+<script type="text/javascript">   
+    function createCode(len)
+	{    
+
+		//创建需要的数据数组
+		var seed=new Array( 'abcdefghijklmnopqrstuvwxyz',  'ABCDEFGHIJKLMNOPQRSTUVWXYZ',  
+'0123456789' );
+       var idx,i;
+	   var result="";//返回结果变量
+	   for (i=0; i<len; i++) //根据指定的长度
+	   {
+		    idx = Math.floor(Math.random()*3); //获得随机数据的整数部分-获取一个随机整数  
+                result += seed[idx].substr(Math.floor(Math.random()*(seed[idx].length)), 1);//根据随机数获取数据中一个值  
+	   }
+	   return result;//返回随机结果
+		}
+function test() {  
+            var inputRandom=document.getElementById("inputRandom").value;  
+            var autoRandom=document.getElementById("autoRandom").innerHTML;  
+			//aotoRandom.onselectstart=new Function("event.returnValue=false;");
+			//document.getElementById("autoRandom").onselectstart=document.getElementById("autoRandom").oncontextmenu=function(){return false;}
+            if(inputRandom==autoRandom) {
+                if (inputRandom == "") {
+                    alert("没有通过注册");
+                }
+                else {
+                    alert("通过验证");
+                document.getElementById("sign").disabled = false;
+                }
+            } else if(inputRandom==null){  
+                alert("没有通过验证");
+            }
+            else if(autoRandom==null){
+                alert("没有通过验证");
+            }
+			else {  
+                alert("没有通过验证");
+            }  
+			}
+
+
+function pagechange() {
+
+}
+</script>
+</head>
+
+<body>
+<div id="pic">
+<img id="logo" style="text-align:center" src="../../images/log-sign/logo2.png"/>
+</div>
+<form action="../../BS_index.html">
+<h1>Create Account</h1>
+<fieldset>
+<img src="../../images/log-sign/-user.png"/>
+<label for="uname">Your Name</label>
+<input type="text" name="username" id="username"  required="required" placeholder="please input  your name" style="width:90%;"/>
+
+<br  />
+<label for="number">Phone Number</label>
+<br  />
+<select name="abc" class="left" id="abc" style="width:30%">
+    <option>Bhutan +975</option>
+    <option>east Timor     +670</option>
+    <option>China     +86</option>
+    <option>African Republic     +236</option>
+    <option>Denmark     +45</option>
+    <option>Ukraine     +380</option>
+    <option>Uzbekistan     +998</option>
+    <option>Uganda    +256</option>
+    <option>Uruguay     +598</option>
+    <option>Chad     +235</option>
+    <option>Yemen     +967</option>
+    <option> Armenia     +374</option>
+    <option>Israel     +972</option>
+    <option>Iraq     +964</option>
+    <option>Iran     +98</option>
+    <option>Belize     +501</option>
+    <option>Cape Verde     +238</option>
+    <option>Russia     +7</option>
+    <option>Bulgaria     +359</option>
+    <option>Croatia     +385</option>
+    <option>Guam     +1</option>
+    <option>India     +91</option>
+  </select>
+<input type="text"  id="rollnumber" name="rollnumber" style="width:50%" placeholder="Input your phone number" required="required" pattern="[0-9].*[0-9]"/>
+<img src="../../images/log-sign/-email.png"/>
+
+<label for="email">Email</label>
+<input type="email" name="mail" id="mail" required="required" placeholder="mysupermail@mail.com" style="width:90%;"/>
+<img src="../../images/log-sign/-password.png">
+
+<label for="passwd">Password</label>
+<input type="password" id="passwd"  name="passwd" required="required" placeholder="Cmbinations of numbers and letters" style="width:90%;" pattern="[A-Za-z].*[0-9]|[0-9].*[A-Za-z]"/>
+</fieldset>
+<br />
+<input type="checkbox" class="check" id="check" onclick="turns()"/>
+<label class="check" onclick="turns()" id="che">Agree with the <a href="privacy%20statement.html">privacy statement</a></label>
+
+<br  />
+<br  />
+<br  />
+<fieldset>
+<label for="validation">验证码</label>
+<br  />
+<select id="sel" style="width:30%">  
+    <option value=1>1</option>  
+    <option value=3>3</option>  
+    <option value=5>5</option>  
+    <option value=7>7</option>  
+    <option value=9>9</option>  
+</select> 
+<input id="inputRandom" type="text" style="width:50%"/>
+<br  />
+<input type="button" value="获取验证码" id="l1" onclick="autoRandom.innerHTML=createCode(sel.value)" style="width:30%"/>
+
+<label id="autoRandom" value=""></label>
+    <div>
+        <input id="r1" type="button" value="验证" onclick="test()" >
+    </div>
+</fieldset>
+
+
+      <button id="sign" type="submit" class="submit" disabled="disabled" onclick="pagechange();">Sign Up</button>
+<br  />
+<br  />
+<br  />
+if you have a account &nbsp;
+<a href="log.html">Log</a>
+</form>
+
+
+<!--
+<script type="text/javascript">
+var iuser;
+function setIValue(){
+	iuser=parseInt(localStorage.getItem("iuser"));
+	if(isNaN(iuser)){
+		iuser=0;
+	}	
+}
+		
+function addUser(){
+	if(typeof(Storage)=='undefined')
+	{
+		alert("Not Supported");
+	}
+	else{
+		localStorage.setItem("u"+iuser,document.getElementById("username").value);
+		localStorage.setItem("n"+iuser,document.getElementById("rollnumber").value);
+		localStorage.setItem("e"+iuser,document.getElementById("mail").value);
+		localStorage.setItem("p"+iuser,document.getElementById("passwd").value);
+		localStorage.setItem("iuser",++iuser);
+		alert("Sucess");
+	}
+	location.reload();
+}
+setIValue();
+</script>
+-->
+
+
+</body>
+</html>

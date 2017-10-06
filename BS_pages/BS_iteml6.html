@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSbookshop - Item Information</title>
+    <script src="../js/jquery-1.8.3.js" type="text/javascript"></script>
+
+    <script src="../js/jquery.colorbox.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/colorbox.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/sun_star.css"/>
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/item_style.css">
+    <script>
+        $(document).ready(function (e) {
+            $(".box").colorbox({
+                rel: "box",
+                transiton: "fade",
+                overlayClose: true,
+                scalePhotos: true,
+                scrolling: true,
+                maxWidth: 800,
+                maxHeight: 600,
+                slideshow: true,
+                slideshowSpeed: 5000,
+                opacity: 0.5,
+                preloading: true
+            });
+        });
+        $(function() {
+            $("#div").click(function() {
+                $(this).toggleClass("blue");
+            });
+        });
+    </script>
+
+    <script src="js/gallery.js"></script>
+    <style type="text/css">
+        body {
+              font-family: 'Open Sans', sans-serif;
+              color: #4A4A4A ;
+              background: url("../images/page_details/details_back.jpg");
+          }
+    </style>
+
+
+
+</head>
+
+<body>
+<div id="setnav">
+    <div class="navl">
+        <span>Welcome to BSbookshop, Please </span><a href="details/Account1.html">Log In</a> .
+    </div>
+    <div class="navr">
+        <nav class="navright">
+            <a href="../BS_index.html">BS Index <i class="fa fa-bold"></i></a> |
+            <a href="details/buycar.html">My Cart <i class="fa fa-shopping-cart"></i> </a> |
+            <a href="details/collection.html">My Collect <i class="fa fa-heart"></i> </a> |
+            <a href="details/orderlist.html">My Order <i class="fa fa-tags"></i> </a>
+        </nav>
+    </div>
+</div>
+<div id="header">
+    <div id="header-left">
+        <a href="../BS_index.html"><img class="logo" src="../images/page_details/logo.png"/></a>
+    </div>
+    <div id="header-right">
+        <form class="form-wrapper cf">
+            <input type="text" placeholder="Search for more books..." required>
+            <button type="submit">Search <i class="fa fa-search"></i> </button>
+        </form>
+    </div>
+    <div id="clear"></div>
+</div>
+<hr style="height:5px;border:none;border-top:5px ridge green;" />
+<div id="item">
+    <div id="itemimg">
+        <a href="../images/page_details/l6-StrengthsFinder%202.0/p1.jpg" class="box" ><img src="../images/page_details/l6-StrengthsFinder%202.0/p1.jpg" alt="img02"/></a>
+        <a href="../images/page_details/l6-StrengthsFinder%202.0/p2.jpg" class="box" ></a>
+        <a href="../images/page_details/l6-StrengthsFinder%202.0/p3.jpg" class="box" ></a>
+        <a href="../images/page_details/l6-StrengthsFinder%202.0/p4.jpg" class="box" ></a>
+        <a href="../images/page_details/l6-StrengthsFinder%202.0/p5.jpg" class="box" ></a>
+    </div>
+    <div class="itemimg_ribbon">
+    </div>
+    <div id="iteminfo" class="inline">
+        <h1 id="title">StrengthsFinder 2.0</h1>
+        <div class="stars">
+            <span class="b_star_1"><i class="b_d8"></i></span>
+        </div>
+        <!-- Class of i changes the stars. b_d8 means 4stars -->
+        <p id="subtitle">Do you have the opportunity to do what you do best every day? </p>
+        <!-- <h2 id="price">price:30.00￥</h2>--->
+        <div class="plans">
+            <div class="plan" id="plan">
+                <h3 class="plan-title">Normal</h3>
+                <p class="plan-price">$11.00 <span class="plan-unit">Normal Packing</span></p>
+                <input type="radio" checked="checked" name="paylist" value="1" class="option-input radio">
+            </div>
+            <div class="plan" id="plan2">
+                <h3 class="plan-title">Clothbound</h3>
+                <p class="plan-price">$16.26 <span class="plan-unit">Clothbound Packing</span></p>
+                <input type="radio" name="paylist" value="2" class="option-input radio">
+            </div>
+        </div>
+        <P id="oinfo">A new and upgraded edition of the StrengthsFinder assessment</P>
+        <form id="buyf">
+            <!--<label for="count"></label> <input type="text" id="count" class="input-text">-->
+            <button id="buy" class="buy" type="button">Buy Now <i class="fa fa-check"></i> </button>
+            <button id="cart" class="buy" type="button" onclick="javascript:alert('Success Added to Your Cart')">Add to Cart <i class="fa fa-cart-arrow-down"></i> </button>
+            <button id="collect" class="buy" type="button" onclick="javascript:alert('Success Added to Your Collect')"><i class="fa fa-heart"></i> </button>
+        </form>
+    </div>
+<!--    <div id="itemlike" class="inline">
+    <p>The book you may also like..</p>
+    </div>-->
+</div>
+<div style="clear: both;"></div>
+<hr/>
+    <div id="itemdetails">
+        <p>Do you have the opportunity to do what you do best every day?
+
+        <p>Chances are, you don't. All too often, our natural talents go untapped. From the cradle to the cubicle, we devote more time to fixing our shortcomings than to developing our strengths.</p>
+
+        <p>To help people uncover their talents, Gallup introduced the first version of its online assessment, StrengthsFinder, in 2001 which ignited a global conversation and helped millions to discover their top five talents.</p>
+
+        <p>In its latest national bestseller, StrengthsFinder 2.0, Gallup unveils the new and improved version of its popular assessment, language of 34 themes, and much more (see below for details). While you can read this book in one sitting, you'll use it as a reference for decades.</p>
+
+        <p>Loaded with hundreds of strategies for applying your strengths, this new book and accompanying website will change the way you look at yourself--and the world around you--forever.</p>
+
+        <p>Available exclusively in StrengthsFinder 2.0:</p>
+        <p>(using the unique access code included with each book)</p>
+
+        <p>* A new and upgraded edition of the StrengthsFinder assessment</p>
+        <p>* A personalized Strengths Discovery and Action-Planning Guide for applying your strengths in the next week, month, and year</p>
+        <p>* A more customized version of your top five theme report</p>
+        <p>* 50 Ideas for Action (10 strategies for building on each of your top five themes)</p>
+
+
+
+    </div>
+
+<div id="footer">
+
+</div>
+</body>
+</html>
