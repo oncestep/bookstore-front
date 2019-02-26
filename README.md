@@ -1,2 +1,2 @@
 # bookstore-front
-This is a simple front end project of bookstore.
+纯手写css，前端入门练习
